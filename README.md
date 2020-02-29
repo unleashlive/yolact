@@ -12,7 +12,7 @@ A simple, fully convolutional model for real-time instance segmentation. This is
  - [YOLACT: Real-time Instance Segmentation](https://arxiv.org/abs/1904.02689)
  - [YOLACT++: Better Real-time Instance Segmentation](https://arxiv.org/abs/1912.06218)
 
-#### YOLACT++ (v1.2) released! ([Changelog](CHANGELOG.md))
+#### YOLACT++ (v1.2) released! ([Changelog](yolact/CHANGELOG.md))
 YOLACT++'s resnet50 model runs at 33.5 fps on a Titan Xp and achieves 34.1 mAP on COCO's `test-dev` (check out our journal paper [here](https://arxiv.org/abs/1912.06218)).
 
 In order to use YOLACT++, make sure you compile the DCNv2 code. (See [Installation](https://github.com/dbolya/yolact#installation))
@@ -22,11 +22,11 @@ In order to use YOLACT++, make sure you compile the DCNv2 code. (See [Installati
 
 Some examples from our YOLACT base model (33.5 fps on a Titan Xp and 29.8 mAP on COCO's `test-dev`):
 
-![Example 0](data/yolact_example_0.png)
+![Example 0](yolact/data/yolact_example_0.png)
 
-![Example 1](data/yolact_example_1.png)
+![Example 1](yolact/data/yolact_example_1.png)
 
-![Example 2](data/yolact_example_2.png)
+![Example 2](yolact/data/yolact_example_2.png)
 
 # Installation
  - Clone this repository and enter it:

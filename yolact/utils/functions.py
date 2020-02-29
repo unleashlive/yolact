@@ -1,10 +1,9 @@
-import torch
 import torch.nn as nn
 import os
 import math
 from collections import deque
 from pathlib import Path
-from layers.interpolate import InterpolateModule
+from yolact.layers.interpolate import InterpolateModule
 
 class MovingAverage():
     """ Keeps an average window of the specified number of items. """

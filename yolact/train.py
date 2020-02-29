@@ -1,28 +1,21 @@
-from data import *
-from utils.augmentations import SSDAugmentation, BaseTransform
-from utils.functions import MovingAverage, SavePath
-from utils.logger import Log
-from utils import timer
-from layers.modules import MultiBoxLoss
-from yolact import Yolact
+from yolact.data import *
+from yolact.utils.augmentations import SSDAugmentation, BaseTransform
+from yolact.utils.functions import MovingAverage, SavePath
+from yolact.utils.logger import Log
+from yolact.utils import timer
+from yolact.layers import MultiBoxLoss
+from yolact import Yolact, eval as eval_script
 import os
-import sys
 import time
 import math, random
-from pathlib import Path
 import torch
-from torch.autograd import Variable
 import torch.nn as nn
 import torch.optim as optim
-import torch.backends.cudnn as cudnn
-import torch.nn.init as init
 import torch.utils.data as data
-import numpy as np
 import argparse
 import datetime
 
 # Oof
-import eval as eval_script
 
 def str2bool(v):
     return v.lower() in ("yes", "true", "t", "1")
