@@ -1,4 +1,4 @@
-import torch, torchvision
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision.models.resnet import Bottleneck
@@ -8,14 +8,12 @@ from math import sqrt
 from typing import List
 from collections import defaultdict
 
-from data.config import cfg, mask_type
-from layers import Detect
-from layers.interpolate import InterpolateModule
-from backbone import construct_backbone
+from yolact.data.config import cfg, mask_type
+from yolact.layers import Detect
+from yolact.backbone import construct_backbone
 
-import torch.backends.cudnn as cudnn
-from utils import timer
-from utils.functions import MovingAverage, make_net
+from yolact.utils import timer
+from yolact.utils.functions import MovingAverage, make_net
 
 # This is required for Pytorch 1.0.1 on Windows to initialize Cuda on some driver versions.
 # See the bug report here: https://github.com/pytorch/pytorch/issues/17108
@@ -680,13 +678,13 @@ class Yolact(nn.Module):
 
 # Some testing code
 if __name__ == '__main__':
-    from utils.functions import init_console
+    from yolact.utils.functions import init_console
     init_console()
 
     # Use the first argument to set the config if you want
     import sys
     if len(sys.argv) > 1:
-        from data.config import set_cfg
+        from yolact.data.config import set_cfg
         set_cfg(sys.argv[1])
 
     net = Yolact()

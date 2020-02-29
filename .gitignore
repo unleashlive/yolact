@@ -106,8 +106,8 @@ dev.ipynb
 # not ready
 videos/
 templates/
-data/ssd_dataloader.py
-data/datasets/
+yolact/data/ssd_dataloader.py
+yolact/data/datasets/
 doc/visualize.py
 read_results.py
 ssd300_120000/
@@ -121,9 +121,9 @@ test_data_aug.py
 .idea/
 
 # temp checkout soln
-data/coco
-data/sbd
-data/cityscapes
+yolact/data/coco
+yolact/data/sbd
+yolact/data/cityscapes
 
 # pylint
 .pylintrc
@@ -132,27 +132,27 @@ data/cityscapes
 ssd.pytorch/
 
 # some datasets
-data/VOCdevkit/
-data/coco/images/
-data/coco/annotations/
+yolact/data/VOCdevkit/
+yolact/data/coco/images/
+yolact/data/coco/annotations/
 ap_data.pkl
 results/
 logs/
-scripts/aws/
-scripts/gt.npy
-scripts/proto.npy
-scripts/info.txt
+yolact/scripts/aws/
+yolact/scripts/gt.npy
+yolact/scripts/proto.npy
+yolact/scripts/info.txt
 test.pkl
 testeval.py
-scripts/aws2/
+yolact/scripts/aws2/
 status.sh
 train.sh
 img/
-scripts/aws-ohio/
-scripts/aws3/
-data/config_dev.py
-data/coco/
-data/sbd/
+yolact/scripts/aws-ohio/
+yolact/scripts/aws3/
+yolact/data/config_dev.py
+yolact/data/coco/
+yolact/data/sbd/
 
 vid/
 vidres/
